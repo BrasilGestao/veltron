@@ -1,5 +1,5 @@
 /* ==========================================================================
-   VELTRON E-COMMERCE - CORE JAVASCRIPT ENGINE (ATUALIZADO & CORRIGIDO)
+   VELTRON E-COMMERCE - CORE JAVASCRIPT ENGINE (ATUALIZADO COM 10 RELÓGIOS)
    ========================================================================== */
 
 const productsData = [
@@ -16,58 +16,102 @@ const productsData = [
     },
     {
         id: 'vel-02',
-        name: 'Pulseira Aço Elos Curb VELTRON',
-        category: 'pulseiras',
-        subType: 'pulseiras',
-        price: 99.90,
-        oldPrice: null,
-        isBestSeller: true,
-        image: 'https://images.unsplash.com/photo-1611591475179-6703be79b35c?w=800&q=80',
-        description: 'Pulseira em aço inoxidável 316L com elos curb de 8mm. Fecho de pressão com gravação da marca.'
-    },
-    {
-        id: 'vel-03',
-        name: 'Colar Prata Corrente Pendant VELTRON',
-        category: 'colares',
-        subType: 'colares',
-        price: 119.90,
-        oldPrice: 139.90,
-        isBestSeller: false,
-        image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80',
-        description: 'Corrente masculina em liga de prata de alta durabilidade com pingente geométrico exclusivo.'
-    },
-    {
-        id: 'vel-04',
-        name: 'Anel Masculino VELTRON Monogram',
-        category: 'aneis',
-        subType: 'aneis',
-        price: 89.90,
-        oldPrice: null,
-        isBestSeller: true,
-        image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80',
-        description: 'Anel estilo com superfície polida e acabamento interno anatômico para máximo conforto.'
-    },
-    {
-        id: 'vel-05',
         name: 'Relógio VELTRON Silver Chrono',
         category: 'relogios',
         subType: 'aço',
-        price: 149.90,
-        oldPrice: 179.90,
-        isBestSeller: false,
+        price: 179.90,
+        oldPrice: 219.90,
+        isBestSeller: true,
         image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&q=80',
         description: 'Design esportivo com toque de alta joalheria. Pulseira prateada e resistente à água.'
     },
     {
-        id: 'vel-06',
-        name: 'Pulseira Couro Trançado & Fecho Prata',
-        category: 'pulseiras',
+        id: 'vel-03',
+        name: 'Relógio VELTRON Classic Brown Leather',
+        category: 'relogios',
         subType: 'couro',
-        price: 94.90,
+        price: 139.90,
+        oldPrice: null,
+        isBestSeller: true,
+        image: 'https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&q=80',
+        description: 'Pulseira em couro legítimo marrom envelhecido, caixa dourada sutil e alta durabilidade.'
+    },
+    {
+        id: 'vel-04',
+        name: 'Relógio VELTRON Dark Obsidian',
+        category: 'relogios',
+        subType: 'aço',
+        price: 199.90,
+        oldPrice: 249.90,
+        isBestSeller: true,
+        image: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800&q=80',
+        description: 'Totalmente escurecido com tecnologia IP Black. Para homens que lideram com presença marcante.'
+    },
+    {
+        id: 'vel-05',
+        name: 'Relógio VELTRON Executive Gold',
+        category: 'relogios',
+        subType: 'aço',
+        price: 219.90,
         oldPrice: null,
         isBestSeller: false,
-        image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80',
-        description: 'Couro legítimo trançado duplo com fecho magnético em liga metálica prateada.'
+        image: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800&q=80',
+        description: 'Acabamento banhado a ouro com mostradores de precisão analógica. Sofisticação máxima.'
+    },
+    {
+        id: 'vel-06',
+        name: 'Relógio VELTRON Urban Steel',
+        category: 'relogios',
+        subType: 'aço',
+        price: 159.90,
+        oldPrice: 189.90,
+        isBestSeller: false,
+        image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+        description: 'Estilo urbano contemporâneo, perfeito para o dia a dia corporativo ou casual.'
+    },
+    {
+        id: 'vel-07',
+        name: 'Relógio VELTRON Vintage Black Leather',
+        category: 'relogios',
+        subType: 'couro',
+        price: 129.90,
+        oldPrice: null,
+        isBestSeller: false,
+        image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80',
+        description: 'Design retrô minimalista com pulseira de couro preto macio e costura reforçada.'
+    },
+    {
+        id: 'vel-08',
+        name: 'Relógio VELTRON Nightfall Edition',
+        category: 'relogios',
+        subType: 'aço',
+        price: 189.90,
+        oldPrice: 229.90,
+        isBestSeller: true,
+        image: 'https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=800&q=80',
+        description: 'Mostrador azul profundo com reflexos solares e pulseira em aço inoxidável escovado.'
+    },
+    {
+        id: 'vel-09',
+        name: 'Relógio VELTRON Minimalist Tan',
+        category: 'relogios',
+        subType: 'couro',
+        price: 134.90,
+        oldPrice: null,
+        isBestSeller: false,
+        image: 'https://images.unsplash.com/photo-1495856458515-063f785efdb7?w=800&q=80',
+        description: 'Pulseira em couro caramelo claro com caixa ultrafina. Leveza e elegância em um só relógio.'
+    },
+    {
+        id: 'vel-10',
+        name: 'Relógio VELTRON Titanium Sport',
+        category: 'relogios',
+        subType: 'aço',
+        price: 239.90,
+        oldPrice: 289.90,
+        isBestSeller: true,
+        image: 'https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=800&q=80',
+        description: 'Estrutura reforçada de alta resistência, ponteiros luminescentes e pulseira robusta.'
     }
 ];
 
@@ -98,10 +142,10 @@ function initApp() {
     updateCartUI();
     setupEventListeners();
     setupScrollAnimations();
-    highlightActiveMenu(); // <--- Correção definitiva do sublinhado do menu
+    highlightActiveMenu();
 }
 
-/* MARCAÇÃO AUTOMÁTICA E PRECISA DO MENU ATIVO */
+/* MARCAÇÃO AUTOMÁTICA DO MENU ATIVO */
 function highlightActiveMenu() {
     let currentPath = window.location.pathname.split('/').pop();
     if (!currentPath || currentPath === '') {
@@ -314,6 +358,22 @@ function setupEventListeners() {
 
     document.getElementById('sortSelect')?.addEventListener('change', () => {
         renderProducts();
+    });
+
+    // MÁSCARA AUTOMÁTICA DO TELEFONE / WHATSAPP
+    const phoneInput = document.getElementById('clientPhone');
+    phoneInput?.addEventListener('input', (e) => {
+        let value = e.target.value.replace(/\D/g, '');
+        if (value.length > 11) value = value.slice(0, 11);
+        
+        if (value.length > 6) {
+            value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+        } else if (value.length > 2) {
+            value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+        } else if (value.length > 0) {
+            value = `(${value}`;
+        }
+        e.target.value = value;
     });
 
     document.querySelectorAll('.tab-btn').forEach(btn => {

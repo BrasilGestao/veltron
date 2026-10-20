@@ -1,5 +1,5 @@
 /* ==========================================================================
-   VELTRON E-COMMERCE - DESIGN SYSTEM & STYLESHEET (OTIMIZADO)
+   VELTRON E-COMMERCE - DESIGN SYSTEM & STYLESHEET (ATUALIZADO)
    Paleta Oficial: #080A0D (Preto), #191D23 (Grafite), #C7CBD1 (Prata), #FFFFFF (Branco)
    ========================================================================== */
 
@@ -176,7 +176,7 @@ body {
 }
 
 /* ==========================================================================
-   4. CABEÇALHO & NAVEGAÇÃO (ESTABILIZADO)
+   4. CABEÇALHO & NAVEGAÇÃO
    ========================================================================== */
 .site-header {
     position: fixed;
@@ -833,6 +833,24 @@ body {
     gap: 16px;
 }
 
+/* Barra de rolagem elegante para o carrinho */
+.cart-drawer-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cart-drawer-body::-webkit-scrollbar-track {
+    background: var(--color-bg-surface);
+}
+
+.cart-drawer-body::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 3px;
+}
+
+.cart-drawer-body::-webkit-scrollbar-thumb:hover {
+    background: var(--color-silver-muted);
+}
+
 .cart-item {
     display: flex;
     gap: 16px;
@@ -1116,5 +1134,14 @@ body {
 
     .modal-grid {
         grid-template-columns: 1fr;
+    }
+
+    .mobile-nav-drawer {
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+    
+    .header-container {
+        padding: 0 16px;
     }
 }
